@@ -14,7 +14,7 @@ async function Home() {
       
       <div className="grid grid-cols-3 grid-rows-2 gap-4 ml-20 mt-10 items-center justify-center">
 
-      {resp.map((book, index: number) => {
+      {resp.map((book:any, index: number) => {
           return(
               <div key={index}  className='flex flex-col gap-10 h-[15rem] w-[20rem] items-center justify-center bg-green-400 rounded-lg'>
                 <Image src="/image/book.jpg" alt='book' width={200} height={200} className='rounded-lg'/>
